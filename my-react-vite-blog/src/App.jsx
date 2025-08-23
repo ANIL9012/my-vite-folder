@@ -30,38 +30,50 @@ import DisplayUser from "./Components/LiftingStateUp/DisplayUser";
 import UpdatingObjects from "./Components/UpdatingObjects/UpdatingObjects";
 import UpdatingArray from "./Components/UpdatingArray/UpdatingArray";
 import UseIdHook from "./Components/useIdHook/UseIdHook";
+import ContextData from "./Components/ContextAPI/ContextData";
+import { SubjectContext } from "./Components/ContextAPI/ContextAPI";
+import UseToggle from "./Components/CustomHook/CustomHook";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  let userobj = {
-    name: "Anil",
-    age: 20,
-    email: "anil@gmail.com",
-    rahul: {
-      id: 1,
-      sonname: "Himanshu",
-      sonemail: "hima@gmail.com",
-    },
-  };
+  // let userobj = {
+  //   name: "Anil",
+  //   age: 20,
+  //   email: "anil@gmail.com",
+  //   rahul: {
+  //     id: 1,
+  //     sonname: "Himanshu",
+  //     sonemail: "hima@gmail.com",
+  //   },
+  // };
 
   // Handle Props Side Effect with useEffect
 
-  const [counter, setCounter] = useState(0);
-  const [data, setData] = useState(0);
+  // const [counter, setCounter] = useState(0);
+  // const [data, setData] = useState(0);
 
-  const increase = () => {
-    setCounter(counter + 1);
-  };
+  // const increase = () => {
+  //   setCounter(counter + 1);
+  // };
 
-  const decrease = () => {
-    setCounter(counter - 1);
-    setData(data + 1);
-  };
+  // const decrease = () => {
+  //   setCounter(counter - 1);
+  //   setData(data + 1);
+  // };
 
   // LiftinStateUp work practice Start
-  const [addUser, setAddUser] = useState ()
+  // const [addUser, setAddUser] = useState();
   // LiftinStateUp work practice End
+  {
+    /* Context API */
+  }
+
+  // const [subject, setSubject] = useState("");
+
+  // CustomHook
+  const [value, togglevalue] = UseToggle(true);
+  console.log("Val------", value);
   return (
     <>
       {/* <div>
@@ -84,7 +96,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      
+
       {/* <Header /> */}
       {/* <LoopJsx /> */}
       {/* <ArrayNestedLooping /> */}
@@ -100,7 +112,7 @@ function App() {
       {/* <HandleRadio /> */}
       {/* <UseOfuseEffectHook /> */}
       {/* <h1>{Userkey}</h1> */}
-      
+
       {/* <HandlePropsSideEffect counter={counter} data={data} />
       <button onClick={increase}>Counter: {counter}</button>
       <button onClick={decrease}>Data: {data}</button> */}
@@ -122,11 +134,39 @@ function App() {
       {/* <AddUser setAddUser = {setAddUser}/> */}
       {/* <DisplayUser addUser = {addUser}/> */}
 
-      <UseIdHook/>
+      {/* <UseIdHook/> */}
 
       {/* <UpdatingObjects/> */}
 
       {/* <UpdatingArray/> */}
+
+      {/* Context API */}
+
+      {/* <div style={{ backgroundColor: "yellow", padding: "15px" }}>
+        <SubjectContext.Provider value={subject}>
+          <select defaultValue={subject} onChange={(e)=> setSubject(e.target.value)}>
+            <option value="">Select Subject</option>
+            <option value="maths">Maths</option>
+            <option value="history">History</option>
+            <option value="english">English</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">javaScript</option>
+            <option value="react js">React.JS</option>
+          </select>
+          <h1>Context Api</h1>
+          <button onClick={()=> setSubject("")}>Clear Subject</button>
+          <ContextData />
+        </SubjectContext.Provider>
+      </div> */}
+
+      {/* CustomHook */}
+      <div>
+        <button onClick={togglevalue}>Toggle Heading</button>
+        <button onClick={()=> togglevalue(false)}>Hide Heading</button>
+        <button onClick={()=> togglevalue(true)}>Show Heading</button>
+        {value ? <h1>Custom Hook in React js</h1> : null}
+      </div>
     </>
   );
 }
