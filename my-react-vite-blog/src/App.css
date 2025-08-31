@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.error{
+    border: 2px solid red;
+}
+.error:focus{
+    outline: 2px solid red;
+}
+.validation-red{
+    color: red;
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import "./App.css";
+import "./App.css";
 
 import Header, {
   Login,
@@ -33,6 +33,8 @@ import UseIdHook from "./Components/useIdHook/UseIdHook";
 import ContextData from "./Components/ContextAPI/ContextData";
 import { SubjectContext } from "./Components/ContextAPI/ContextAPI";
 import UseToggle from "./Components/CustomHook/CustomHook";
+import ValidationInput from "./validation on input/validationInput";
+import ValidationuseActionState from "./Components/validation with useActionState/ValidationuseActionState";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -69,7 +71,7 @@ function App() {
     /* Context API */
   }
 
-  // const [subject, setSubject] = useState("");
+  const [subject, setSubject] = useState("");
 
   // CustomHook
   const [value, togglevalue] = UseToggle(true);
@@ -146,13 +148,13 @@ function App() {
         <SubjectContext.Provider value={subject}>
           <select defaultValue={subject} onChange={(e)=> setSubject(e.target.value)}>
             <option value="">Select Subject</option>
-            <option value="maths">Maths</option>
-            <option value="history">History</option>
-            <option value="english">English</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="javascript">javaScript</option>
-            <option value="react js">React.JS</option>
+            <option value="Maths">Maths</option>
+            <option value="History">History</option>
+            <option value="English">English</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">JavaScript</option>
+            <option value="React js">React.JS</option>
           </select>
           <h1>Context Api</h1>
           <button onClick={()=> setSubject("")}>Clear Subject</button>
@@ -161,12 +163,18 @@ function App() {
       </div> */}
 
       {/* CustomHook */}
-      <div>
+      {/* <div>
         <button onClick={togglevalue}>Toggle Heading</button>
         <button onClick={()=> togglevalue(false)}>Hide Heading</button>
         <button onClick={()=> togglevalue(true)}>Show Heading</button>
         {value ? <h1>Custom Hook in React js</h1> : null}
-      </div>
+      </div> */}
+
+      {/* Normal Validation  */}
+      {/* <ValidationInput/>  */}
+
+      {/* validation with useActionState */}
+      <ValidationuseActionState/>
     </>
   );
 }
