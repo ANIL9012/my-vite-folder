@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Suspense, lazy, useState } from "react";
 import "./App.css";
 
 import Header, {
@@ -35,6 +35,24 @@ import { SubjectContext } from "./Components/ContextAPI/ContextAPI";
 import UseToggle from "./Components/CustomHook/CustomHook";
 import ValidationInput from "./validation on input/validationInput";
 import ValidationuseActionState from "./Components/validation with useActionState/ValidationuseActionState";
+import UseReducerhook from "./Components/useReducerhook/UseReducerhook";
+import CallRestAPI from "./Components/Call Rest API/CallRestAPI.jsx";
+import RGBColorMixer from "./Components/RGB Color Mixer/RGBColorMixer.jsx";
+const Userlazy = lazy(() =>
+  import("../src/Components/Lazy Loading/LazyLoading.jsx")
+);
+
+{
+  /* Call Rest API Start */
+}
+
+// const fetchData = () =>
+//   fetch("https://dummyjson.com/users").then((response) => response.json());
+
+// const userResource = fetchData();
+{
+  /* Call Rest API End */
+}
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -71,11 +89,22 @@ function App() {
     /* Context API */
   }
 
-  const [subject, setSubject] = useState("");
+  // const [subject, setSubject] = useState("");
 
   // CustomHook
-  const [value, togglevalue] = UseToggle(true);
-  console.log("Val------", value);
+  // const [value, togglevalue] = UseToggle(true);
+  // console.log("Val------", value);
+
+  {
+    /* Lazy Loading Start*/
+  }
+
+  // const [load, setLoad] = useState(false);
+
+  {
+    /* Lazy Loading End*/
+  }
+
   return (
     <>
       {/* <div>
@@ -174,7 +203,35 @@ function App() {
       {/* <ValidationInput/>  */}
 
       {/* validation with useActionState */}
-      <ValidationuseActionState/>
+      {/* <ValidationuseActionState/> */}
+
+      {/* useReducerhook */}
+
+      {/* <UseReducerhook/> */}
+
+      {/* Lazy Loading Start*/}
+      {/* <div>
+
+        <h1>User Lazy user  loading</h1>
+        {
+        load ? <Suspense fallback={<h3>Loading.....</h3>}><Userlazy/></Suspense> : null
+        }
+        <button onClick={()=> setLoad(true)}>Load user</button>
+      </div> */}
+      {/* Lazy Loading End*/}
+
+      {/* Call Rest API Start */}
+
+      {/* <div>
+        <Suspense fallback={<p>Call Rest API Loading</p>}>
+          <CallRestAPI userResource={userResource} />
+        </Suspense>
+      </div> */}
+      {/* Call Rest API End */}
+
+      {/* RGB Color Mixer Start */}
+      <RGBColorMixer/>
+      {/* RGB Color Mixer End */}
     </>
   );
 }
