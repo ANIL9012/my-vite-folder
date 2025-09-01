@@ -38,6 +38,8 @@ import ValidationuseActionState from "./Components/validation with useActionStat
 import UseReducerhook from "./Components/useReducerhook/UseReducerhook";
 import CallRestAPI from "./Components/Call Rest API/CallRestAPI.jsx";
 import RGBColorMixer from "./Components/RGB Color Mixer/RGBColorMixer.jsx";
+import MultipleCondition from "./Components/MultipleConditions/MultipleCondition.jsx";
+
 const Userlazy = lazy(() =>
   import("../src/Components/Lazy Loading/LazyLoading.jsx")
 );
@@ -75,11 +77,12 @@ function App() {
 
   // const increase = () => {
   //   setCounter(counter + 1);
+  //   setData(Math.max(0, data - 1));
   // };
 
   // const decrease = () => {
-  //   setCounter(counter - 1);
-  //   setData(data + 1);
+  //     setData(data + 1);
+  //     setCounter(Math.max(0, counter - 1));
   // };
 
   // LiftinStateUp work practice Start
@@ -107,33 +110,13 @@ function App() {
 
   return (
     <>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Learn with <b>Anil Kumar sir </b> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-
       {/* <Header /> */}
       {/* <LoopJsx /> */}
       {/* <ArrayNestedLooping /> */}
       {/* <Props user={userobj} /> */}
       {/* <FruitList /> */}
       {/* <Toggle /> */}
+      <MultipleCondition/>
       {/* <Login /> */}
       {/* <Profile /> */}
       {/* <Setting /> */}
@@ -144,8 +127,8 @@ function App() {
       {/* <UseOfuseEffectHook /> */}
       {/* <h1>{Userkey}</h1> */}
 
-      {/* <HandlePropsSideEffect counter={counter} data={data} />
-      <button onClick={increase}>Counter: {counter}</button>
+      {/* <HandlePropsSideEffect counter={counter} data={data} /> */}
+      {/* <button onClick={increase}>Counter: {counter}</button>
       <button onClick={decrease}>Data: {data}</button> */}
 
       {/* Handle Props Side Effect with useEffect */}
@@ -230,7 +213,7 @@ function App() {
       {/* Call Rest API End */}
 
       {/* RGB Color Mixer Start */}
-      <RGBColorMixer/>
+      {/* <RGBColorMixer/> */}
       {/* RGB Color Mixer End */}
     </>
   );

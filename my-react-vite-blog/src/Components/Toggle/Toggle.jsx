@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
-// import { useState } from "react";
-
 export default function Toggle() {
-  const [display, setdisplay] = useState(true);
+  const [display, setdisplay] = useState(false);
 
   return (
     <>
