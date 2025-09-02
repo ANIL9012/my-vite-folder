@@ -59,16 +59,16 @@ const Userlazy = lazy(() =>
 function App() {
   // const [count, setCount] = useState(0);
 
-  // let userobj = {
-  //   name: "Anil",
-  //   age: 20,
-  //   email: "anil@gmail.com",
-  //   rahul: {
-  //     id: 1,
-  //     sonname: "Himanshu",
-  //     sonemail: "hima@gmail.com",
-  //   },
-  // };
+  let userobj = {
+    name: "Anil",
+    age: 20,
+    email: "anil@gmail.com",
+    rahul: {
+      id: 1,
+      sonname: "Himanshu",
+      sonemail: "hima@gmail.com",
+    },
+  };
 
   // Handle Props Side Effect with useEffect
 
@@ -113,10 +113,10 @@ function App() {
       {/* <Header /> */}
       {/* <LoopJsx /> */}
       {/* <ArrayNestedLooping /> */}
-      {/* <Props user={userobj} /> */}
+      <Props user={userobj} />
       {/* <FruitList /> */}
       {/* <Toggle /> */}
-      <MultipleCondition/>
+      {/* <MultipleCondition/> */}
       {/* <Login /> */}
       {/* <Profile /> */}
       {/* <Setting /> */}
