@@ -113,14 +113,14 @@ function App() {
       {/* <Header /> */}
       {/* <LoopJsx /> */}
       {/* <ArrayNestedLooping /> */}
-      <Props user={userobj} />
+      {/* <Props user={userobj} /> */}
       {/* <FruitList /> */}
       {/* <Toggle /> */}
       {/* <MultipleCondition/> */}
       {/* <Login /> */}
       {/* <Profile /> */}
       {/* <Setting /> */}
-      {/* <GetInput /> */}
+      <GetInput />
       {/* <FormControl /> */}
       {/* <CheckboxSkills /> */}
       {/* <HandleRadio /> */}
