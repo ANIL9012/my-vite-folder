@@ -1,0 +1,16 @@
+.clockTime{
+    background-color: #171212;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffff;
+    width: 120px;
+    margin-top: 10px;
+}
+.selectTag{
+    margin: 10px auto;
+    background-color: #442222;
+    padding: 15px;
+    width: 120px;
+    border-radius: 10px;
+}
+

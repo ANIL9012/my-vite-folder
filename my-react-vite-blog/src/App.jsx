@@ -39,6 +39,7 @@ import UseReducerhook from "./Components/useReducerhook/UseReducerhook";
 import CallRestAPI from "./Components/Call Rest API/CallRestAPI.jsx";
 import RGBColorMixer from "./Components/RGB Color Mixer/RGBColorMixer.jsx";
 import MultipleCondition from "./Components/MultipleConditions/MultipleCondition.jsx";
+import Clock from "./Components/ClockTimer/Clock.jsx";
 
 const Userlazy = lazy(() =>
   import("../src/Components/Lazy Loading/LazyLoading.jsx")
@@ -59,16 +60,16 @@ const Userlazy = lazy(() =>
 function App() {
   // const [count, setCount] = useState(0);
 
-  let userobj = {
-    name: "Anil",
-    age: 20,
-    email: "anil@gmail.com",
-    rahul: {
-      id: 1,
-      sonname: "Himanshu",
-      sonemail: "hima@gmail.com",
-    },
-  };
+  // let userobj = {
+  //   name: "Anil",
+  //   age: 20,
+  //   email: "anil@gmail.com",
+  //   rahul: {
+  //     id: 1,
+  //     sonname: "Himanshu",
+  //     sonemail: "hima@gmail.com",
+  //   },
+  // };
 
   // Handle Props Side Effect with useEffect
 
@@ -112,6 +113,7 @@ function App() {
     <>
       {/* <Header /> */}
       {/* <LoopJsx /> */}
+      {/* <Clock/> */}
       {/* <ArrayNestedLooping /> */}
       {/* <Props user={userobj} /> */}
       {/* <FruitList /> */}
@@ -120,11 +122,11 @@ function App() {
       {/* <Login /> */}
       {/* <Profile /> */}
       {/* <Setting /> */}
-      <GetInput />
+      {/* <GetInput /> */}
       {/* <FormControl /> */}
       {/* <CheckboxSkills /> */}
       {/* <HandleRadio /> */}
-      {/* <UseOfuseEffectHook /> */}
+      <UseOfuseEffectHook />
       {/* <h1>{Userkey}</h1> */}
 
       {/* <HandlePropsSideEffect counter={counter} data={data} /> */}

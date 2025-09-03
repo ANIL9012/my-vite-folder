@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function HandleRadio() {
   const [gender, setGender] = useState("");
-  const [city, setCity] = useState("Delhi");
+  const [city, setCity] = useState("");
 
   return (
     <>
@@ -33,7 +33,7 @@ export default function HandleRadio() {
 
       <h2>Select Any City:</h2>
 
-      <select defaultValue={"dehli"} onChange={(e)=> setCity(e.target.value)}>
+      <select defaultValue={""} onChange={(e)=> setCity(e.target.value)}>
         <option value="Dehli">Dehli</option>
         <option value="Rampur">Rampur</option>
         <option value="Bengaluru">Bengaluru</option>

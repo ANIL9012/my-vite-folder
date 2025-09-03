@@ -32,7 +32,7 @@ export default function LoopJsx() {
 
   return (
     <>
-      <div className="tabletext d-flex justify-content-center text-center">
+      <div className="tabletext">
         <table border={"1px"}>
           <thead>
             <tr>

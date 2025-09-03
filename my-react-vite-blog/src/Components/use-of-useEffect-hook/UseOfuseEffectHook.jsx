@@ -10,9 +10,26 @@ export default function UseOfuseEffectHook() {
         console.log("CounetFunction:", counter)
     }
 
+    // useEffect(()=>{
+    //   // Call every Time toh es tarah se karte he chahe koi state ho ya kuchh or 
+    // })
+
     useEffect(()=>{
     CounetFunction()
+      // Call only one Time  toh es tarah se
     }, [])
+
+    // useEffect(()=>{
+    //   // Call on Changing single State
+    // }, [state])
+
+    // useEffect(()=>{
+    //   // Call on Changing both State
+    // })
+
+    // useEffect(()=>{
+    //   // Call on changes props
+    // },[prop1, props2])
 
   return (
     <>
