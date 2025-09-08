@@ -93,7 +93,7 @@ function App() {
     /* Context API */
   }
 
-  // const [subject, setSubject] = useState("");
+  const [subject, setSubject] = useState("");
 
   // CustomHook
   // const [value, togglevalue] = UseToggle(true);
@@ -126,7 +126,7 @@ function App() {
       {/* <FormControl /> */}
       {/* <CheckboxSkills /> */}
       {/* <HandleRadio /> */}
-      <UseOfuseEffectHook />
+      {/* <UseOfuseEffectHook /> */}
       {/* <h1>{Userkey}</h1> */}
 
       {/* <HandlePropsSideEffect counter={counter} data={data} /> */}
@@ -158,7 +158,7 @@ function App() {
 
       {/* Context API */}
 
-      {/* <div style={{ backgroundColor: "yellow", padding: "15px" }}>
+      <div style={{ backgroundColor: "yellow", padding: "15px" }}>
         <SubjectContext.Provider value={subject}>
           <select defaultValue={subject} onChange={(e)=> setSubject(e.target.value)}>
             <option value="">Select Subject</option>
@@ -174,7 +174,7 @@ function App() {
           <button onClick={()=> setSubject("")}>Clear Subject</button>
           <ContextData />
         </SubjectContext.Provider>
-      </div> */}
+      </div>
 
       {/* CustomHook */}
       {/* <div>
