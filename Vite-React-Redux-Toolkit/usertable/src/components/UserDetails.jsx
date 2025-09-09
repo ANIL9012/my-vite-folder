@@ -5,15 +5,13 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../store/slice/UserSlice";
 import DisplayUsers from "./DisplayUsers";
 
-
 function UserDetails() {
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch()
-
-    const addNewUser = (name) => {
-        console.log(name)
-        dispatch(addUser(name))
-    };
+  const addNewUser = (name) => {
+    // console.log(name);
+    dispatch(addUser(name));
+  };
 
   return (
     <>
@@ -21,10 +19,15 @@ function UserDetails() {
         <div className="content">
           <div className="admin-table">
             <div className="admin-subtitle">List of users Details</div>
-            <button className="btn add-btn" onClick={() => addNewUser(fakeUserData())}>Add New Users</button>
+            <button
+              className="btn add-btn"
+              onClick={() => addNewUser(fakeUserData())}
+            >
+              Add New Users
+            </button>
           </div>
           <ul>
-            <DisplayUsers/>
+              <DisplayUsers />
           </ul>
           <hr />
           <DeleteAllUsers />

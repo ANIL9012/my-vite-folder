@@ -2,14 +2,16 @@
   text-align: center;
 }
 
-.wrapper .wrapper-text-heading {
-  text-align: center;
-}
+/* Display user */
 
-.main-section .section-text-div {
-  text-align: center;
+.wrapperTwo li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.wrapperTwo li button{
+  margin: 8px 0px;
+}
 nav {
   margin: 2rem 0;
   background: #f9f9f9;
@@ -21,10 +23,6 @@ nav .menuItems {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-nav .menuItems li {
-  /* margin: 1.6rem 5rem; */
 }
 
 nav .menuItems li a {
@@ -88,7 +86,17 @@ h3 {
   filter: drop-shadow(0.2rem 0.2rem 0.5rem rgb(255 0 0 / 0.2));
   cursor: pointer;
 }
-
+.Deleteuserbtn{
+  text-align: center;
+}
+.clear-btn{
+  text-transform: capitalize;
+  background-color: #bd338a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
 .btn {
   border: none;
   opacity: 0.9;
@@ -98,7 +106,6 @@ h3 {
   font-size: 1.8rem;
   padding: 7px 13px;
   border-radius: 4px;
-  /* letter-spacing: 0.3px; */
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   transition: transform 0.5s ease;

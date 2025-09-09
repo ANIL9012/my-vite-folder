@@ -3,10 +3,10 @@ const Navbar = () => {
     <>
       <div className="wrapper">
         <div className="wrapper-text-div">Welcome, to Thapa Education Hub</div>
-        <h1 className="wrapper-text-heading">Admin Table</h1>
+        <h1 className="wrapper-text-div">Admin Table</h1>
 
         <section className="main-section">
-          <div className="section-text-div">One Destination for complete Web Development</div>
+          <div className="wrapper-text-div">One Destination for complete Web Development</div>
           <nav>
             <ul className="menuItems">
               <li>
