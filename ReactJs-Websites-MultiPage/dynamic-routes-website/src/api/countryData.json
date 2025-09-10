@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "countryName": "India",
+    "population": "1.43 Billion",
+    "capital": "New Delhi",
+    "interestingFact": "India has the world’s largest democracy."
+  },
+  {
+    "id": 2,
+    "countryName": "China",
+    "population": "1.41 Billion",
+    "capital": "Beijing",
+    "interestingFact": "The Great Wall of China is one of the longest structures ever built."
+  },
+  {
+    "id": 3,
+    "countryName": "United States",
+    "population": "340 Million",
+    "capital": "Washington, D.C.",
+    "interestingFact": "The US has the world’s largest economy."
+  },
+  {
+    "id": 4,
+    "countryName": "Brazil",
+    "population": "216 Million",
+    "capital": "Brasília",
+    "interestingFact": "The Amazon rainforest produces about 20% of the world’s oxygen."
+  },
+  {
+    "id": 5,
+    "countryName": "Japan",
+    "population": "123 Million",
+    "capital": "Tokyo",
+    "interestingFact": "Japan has the world’s fastest trains, the Shinkansen."
+  },
+  {
+    "id": 6,
+    "countryName": "Russia",
+    "population": "142 Million",
+    "capital": "Moscow",
+    "interestingFact": "Russia is the largest country by land area."
+  },
+  {
+    "id": 7,
+    "countryName": "Australia",
+    "population": "27 Million",
+    "capital": "Canberra",
+    "interestingFact": "Australia is home to more kangaroos than people."
+  },
+  {
+    "id": 8,
+    "countryName": "Canada",
+    "population": "41 Million",
+    "capital": "Ottawa",
+    "interestingFact": "Canada has the longest coastline in the world."
+  },
+  {
+    "id": 9,
+    "countryName": "Egypt",
+    "population": "115 Million",
+    "capital": "Cairo",
+    "interestingFact": "Egypt is famous for its ancient pyramids and pharaohs."
+  },
+  {
+    "id": 10,
+    "countryName": "France",
+    "population": "66 Million",
+    "capital": "Paris",
+    "interestingFact": "France is the most visited country in the world."
+  },
+  {
+    "id": 11,
+    "countryName": "Pakistan",
+    "population": "25 Million",
+    "capital": "Karachi",
+    "interestingFact": "Pakistan is the most Tarerist country in the world."
+  },
+  {
+    "id": 10,
+    "countryName": "Banglades",
+    "population": "35 Million",
+    "capital": "Dhaka",
+    "interestingFact": "Banglades is the most Converted country in the world."
+  }
+]
