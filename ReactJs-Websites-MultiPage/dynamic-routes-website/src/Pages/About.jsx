@@ -10,8 +10,8 @@ export const About = () => {
           we're proud of
         </h2>
         <div className="gradient-cards">
-          {countryFacts.map((country) => {
-            const { id, countryName, capital, population, interestingFact } =
+          {countryFacts.map((country, id) => {
+            const {countryName, capital, population, interestingFact } =
               country;
             return (
               <div className="card" key={id}>

@@ -3,6 +3,7 @@ import { MdPlace } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import { TbMailPlus } from "react-icons/tb";
 import {NavLink} from "react-router-dom"
+
 export const Footers = () => {
   const footerIcons = {
     MdPlace: <MdPlace />,
