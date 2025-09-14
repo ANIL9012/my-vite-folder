@@ -17,7 +17,6 @@ function FoodCard({ id, img, name, rupee, desc, rating, handleToast }) {
         />
         <div className="text-sm flex justify-between">
           <h2>
-            {/* {name} */}
             {name.length > 10 ? name.slice(0,20) + "..." : name}
             </h2>
           <span className="text-green-500">{rupee}</span>
