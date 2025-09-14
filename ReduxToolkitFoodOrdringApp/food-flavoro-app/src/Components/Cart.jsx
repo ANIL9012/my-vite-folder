@@ -3,9 +3,11 @@ import { IoMdClose } from "react-icons/io";
 import ItemCard from "./ItemCard";
 import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
+import {useNavigate} from "react-router-dom"; 
 
 function Cart() {
-  const [activecart, setActivecart] = useState(true);
+  const [activecart, setActivecart] = useState(false);
   const cartItem = useSelector((state) => state.cart.cart);
   const totalQty = cartItem.reduce(
     (accumulator, currentValue) => accumulator + currentValue.qty,
@@ -14,9 +16,10 @@ function Cart() {
 
   const totalPrice = cartItem.reduce(
     (total, item) => total + Number(item.qty) * Number(item.rupee || 0),
-    0 
+    0
   );
 
+  const navigate = useNavigate();
 
   return (
     <>
@@ -36,7 +39,7 @@ function Cart() {
 
         {cartItem.length > 0 ? (
           cartItem.map((food) => {
-            console.log("CartItem Food", food)
+            console.log("CartItem Food", food);
             return (
               <ItemCard
                 key={food.id}
@@ -60,7 +63,7 @@ function Cart() {
             Total Amount: {totalPrice}
           </h3>
           <hr className="w-[90vw] lg:w-[18vw] my-2" />
-          <button className="bg-green-500 font-bold px-3 text-white py-2 rounded-lg w-[90vw] lg:w-[18vw] mb-3">
+          <button onClick={() => navigate("/success")} className="bg-green-500 font-bold px-3 text-white py-2 rounded-lg w-[90vw] lg:w-[18vw] mb-3">
             Checkout
           </button>
         </div>
