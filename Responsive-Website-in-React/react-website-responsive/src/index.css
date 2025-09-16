@@ -36,3 +36,7 @@ a {
     width: 20px;
     margin-left: 7px ;
 }
+.btn.dark-btn{
+  background-color: #212EA0;
+  color: #fff;
+}
