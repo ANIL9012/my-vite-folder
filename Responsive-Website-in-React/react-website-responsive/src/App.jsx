@@ -6,6 +6,8 @@ import Title from "./Components/Title/Title.jsx";
 import About from "./Components/About/About.jsx";
 import Campus from "./Components/Campus/Campus.jsx";
 import Testimonial from "./Components/Testimonials/Testimonial.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 function App() {
   return (
     <>
@@ -16,7 +18,11 @@ function App() {
           {/* import Title Component start */}
           <Title subTitle="Our PROGRAM" title="What We offer" />
           {/* import Title Component end*/}
+
+          {/* import Programs Component start*/}
           <Programs />
+          {/* import Programs Component end*/}
+
           {/* Import About Component start */}
           <About />
           {/* Import About Component End */}
@@ -36,6 +42,18 @@ function App() {
           {/* import Testimonials main Component start */}
           <Testimonial />
           {/* import Testimonials main Component end*/}
+
+          {/* import Title Component Contact us Text start */}
+          <Title subTitle="Contact Us" title="Get in Touch" />
+          {/* import Title Component Contact us Text end*/}
+
+          {/* import Contact Component start */}
+          <Contact />
+          {/* import Contact Component end */}
+
+          {/* import Footer Component start */}
+          <Footer />
+          {/* import Footer Component end */}
         </div>
       </div>
     </>
