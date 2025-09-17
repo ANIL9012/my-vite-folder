@@ -8,7 +8,13 @@ import Campus from "./Components/Campus/Campus.jsx";
 import Testimonial from "./Components/Testimonials/Testimonial.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import VideoPlayer from "./Components/VideoPlayer/VideoPlayer.jsx";
+import { useState } from "react";
+
 function App() {
+
+  const [playState, setPlayState] = useState(false);
+
   return (
     <>
       <div>
@@ -24,7 +30,7 @@ function App() {
           {/* import Programs Component end*/}
 
           {/* Import About Component start */}
-          <About />
+          <About setPlayState={setPlayState} />
           {/* Import About Component End */}
 
           {/* import Title Component Gallery Text start */}
@@ -55,6 +61,7 @@ function App() {
           <Footer />
           {/* import Footer Component end */}
         </div>
+        <VideoPlayer playState={playState} setPlayState={setPlayState} />
       </div>
     </>
   );
