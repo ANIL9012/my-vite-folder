@@ -113,7 +113,7 @@ function App() {
     <>
       {/* <Header /> */}
       {/* <LoopJsx /> */}
-      {/* <Clock/> */}
+      <Clock/>
       {/* <ArrayNestedLooping /> */}
       {/* <Props user={userobj} /> */}
       {/* <FruitList /> */}
@@ -121,7 +121,7 @@ function App() {
       {/* <Login /> */}
       {/* <Profile /> */}
       {/* <Setting /> */}
-      <GetInput />
+      {/* <GetInput /> */}
       {/* <FormControl /> */}
       {/* <CheckboxSkills /> */}
       {/* <HandleRadio /> */}
