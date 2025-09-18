@@ -38,8 +38,8 @@ import ValidationuseActionState from "./Components/validation with useActionStat
 import UseReducerhook from "./Components/useReducerhook/UseReducerhook";
 import CallRestAPI from "./Components/Call Rest API/CallRestAPI.jsx";
 import RGBColorMixer from "./Components/RGB Color Mixer/RGBColorMixer.jsx";
-import MultipleCondition from "./Components/MultipleConditions/MultipleCondition.jsx";
 import Clock from "./Components/ClockTimer/Clock.jsx";
+import MultipleConditions from "./Components/Multiple Conditions or Else If/MultipleConditions.jsx";
 
 const Userlazy = lazy(() =>
   import("../src/Components/Lazy Loading/LazyLoading.jsx")
@@ -118,14 +118,14 @@ function App() {
       {/* <Props user={userobj} /> */}
       {/* <FruitList /> */}
       {/* <Toggle /> */}
-      {/* <MultipleCondition/> */}
       {/* <Login /> */}
       {/* <Profile /> */}
       {/* <Setting /> */}
-      {/* <GetInput /> */}
+      <GetInput />
       {/* <FormControl /> */}
       {/* <CheckboxSkills /> */}
       {/* <HandleRadio /> */}
+      {/* <MultipleConditions /> */}
       {/* <UseOfuseEffectHook /> */}
       {/* <h1>{Userkey}</h1> */}
 
@@ -158,7 +158,7 @@ function App() {
 
       {/* Context API */}
 
-      <div style={{ backgroundColor: "yellow", padding: "15px" }}>
+      {/* <div style={{ backgroundColor: "yellow", padding: "15px" }}>
         <SubjectContext.Provider value={subject}>
           <select defaultValue={subject} onChange={(e)=> setSubject(e.target.value)}>
             <option value="">Select Subject</option>
@@ -174,7 +174,7 @@ function App() {
           <button onClick={()=> setSubject("")}>Clear Subject</button>
           <ContextData />
         </SubjectContext.Provider>
-      </div>
+      </div> */}
 
       {/* CustomHook */}
       {/* <div>
