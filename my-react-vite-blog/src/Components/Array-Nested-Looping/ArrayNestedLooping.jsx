@@ -49,8 +49,8 @@ function ArrayNestedLooping() {
       ],
     },
     {
-      name: "IIT Rundki",
-      city: "Rundki",
+      name: "IIT Ruddki",
+      city: "Ruddki",
       website: "www.iitRundki.com",
       Students: [
         {

@@ -113,7 +113,7 @@ function App() {
     <>
       {/* <Header /> */}
       {/* <LoopJsx /> */}
-      <Clock/>
+      {/* <Clock/> */}
       {/* <ArrayNestedLooping /> */}
       {/* <Props user={userobj} /> */}
       {/* <FruitList /> */}
@@ -126,7 +126,7 @@ function App() {
       {/* <CheckboxSkills /> */}
       {/* <HandleRadio /> */}
       {/* <MultipleConditions /> */}
-      {/* <UseOfuseEffectHook /> */}
+      <UseOfuseEffectHook />
       {/* <h1>{Userkey}</h1> */}
 
       {/* <HandlePropsSideEffect counter={counter} data={data} /> */}
