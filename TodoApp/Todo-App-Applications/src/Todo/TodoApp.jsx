@@ -8,14 +8,25 @@ function TodoApp() {
   const [task, setTask] = useState([]);
 
   const handleFormSubmit = (inputValue) => {
-    if (!inputValue) return;
-    if (task.includes(inputValue)) return;
-    setTask((prevTask) => [...prevTask, inputValue]);
+    const { id, content, checked } = inputValue;
+
+    if (!content) return;
+
+    // if (task.includes(inputValue)) return;
+
+    const ifTodoContentMatched = task.find(
+      (curTask) => curTask.content === content
+    );
+
+    if (ifTodoContentMatched) return;
+
+    setTask((prevTask) => [...prevTask, { id, content, checked }]);
   };
 
   // Todo delete one by one
+ 
   const handleDeleteTodo = (value) => {
-    const updatedTask = task.filter((curfilterTask) => curfilterTask !== value);
+    const updatedTask = task.filter((curfilterTask) => curfilterTask.content !== value);
     setTask(updatedTask);
   };
 
@@ -24,6 +35,20 @@ function TodoApp() {
   const handleCleareTodo = () => {
     setTask([]);
   };
+
+  // Todo handleCheckedTodo functionality
+
+  const handleCheckedTodo = (content) => {
+    const updatedTask = task.map((curTask) => {
+      if(curTask.content === content){
+        return{...curTask, checked: !curTask.checked};
+      }else{
+        return curTask;
+      }
+
+    });
+    setTask(updatedTask)
+  }
 
   return (
     <>
@@ -41,9 +66,11 @@ function TodoApp() {
             {task.map((curTask, index) => {
               return (
                 <TodoList
-                  key={index}
-                  data={curTask}
+                  key={curTask.id}
+                  data={curTask.content}
+                  checked={curTask.checked}
                   onHandleDeleteTodo={handleDeleteTodo}
+                  onHandleCheckedTodo={handleCheckedTodo}
                 />
               );
             })}
