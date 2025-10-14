@@ -40,6 +40,7 @@ import CallRestAPI from "./Components/Call Rest API/CallRestAPI.jsx";
 import RGBColorMixer from "./Components/RGB Color Mixer/RGBColorMixer.jsx";
 import Clock from "./Components/ClockTimer/Clock.jsx";
 import MultipleConditions from "./Components/Multiple Conditions or Else If/MultipleConditions.jsx";
+import ToggleComponentorShowHide from "./Components/ToggleComponentorShowHideusingState/ToggleComponentorShowHide.jsx";
 
 const Userlazy = lazy(() =>
   import("../src/Components/Lazy Loading/LazyLoading.jsx")
@@ -126,7 +127,8 @@ function App() {
       {/* <CheckboxSkills /> */}
       {/* <HandleRadio /> */}
       {/* <MultipleConditions /> */}
-      <UseOfuseEffectHook />
+      {/* <UseOfuseEffectHook /> */}
+      <ToggleComponentorShowHide />
       {/* <h1>{Userkey}</h1> */}
 
       {/* <HandlePropsSideEffect counter={counter} data={data} /> */}
